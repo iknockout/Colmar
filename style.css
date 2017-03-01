@@ -1,5 +1,6 @@
 html {
   font-size: 16px;
+  font-family: "Space Mono", sans-serif;
 }
 
 .headSection {
@@ -43,8 +44,53 @@ html {
 }
 
 .navArea .desktop li {
-  padding-right: 1rem;
+  padding-right: 1rem;  // per spec
   color: rgba(108, 108, 108, 1);  // gray - not working
+}
+
+.introSection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-height: 20rem;  // bug: img still scales beyond this container
+  //background-color: rgba(208, 208, 208, 1);  stopped working
+  background-color: lightgray;
+  padding: 2rem 2.5rem 2rem 1.5rem;  // per spec
+}
+
+.introSection img {
+  width: 60%;  // per spec
+  //max-width: 100%;  // scale for resize
+  //height: auto;  // scale for resize
+}
+
+.textArea {
+  display: flex:
+  flex-direction: column;
+  margin-left: 2.5rem;  // per spec 
+  width: 80%;
+}
+
+.text1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgba(70, 70, 70, 1);
+}
+
+.text2 {
+  font-size: 0.9rem;
+  //padding-top: 2rem;  // per spec for mobile?
+  //padding-bottom: 1.5rem;  // per spec for mobile?
+}
+
+.button {
+  font-size: 0.75rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(80, 80, 80, 1);
+  height: 1.8rem;
+  width: 100%;
+  padding: 0.5rem auto;  // per spec
 }
 
 .mobile {
