@@ -48,6 +48,14 @@ html {
   color: rgba(108, 108, 108, 1);  // gray - not working
 }
 
+.emptyArea {
+  display: block;
+  height: 11.25rem;  // per spec
+  width: 100%;
+  background-color: rgba(148, 148, 148, 1); 
+  //border: medium solid red;  // debug
+}
+
 .introSection {
   display: flex;
   flex-direction: row;
@@ -110,6 +118,12 @@ html {
     align-items: center;
     width: 30rem;  // how to make this dynamic
     flex-shrink: 10;
+  }
+  .introSection .desktop {
+    display: none;
+  }
+  .emptyArea {
+    display: block;
   }
 }
 
