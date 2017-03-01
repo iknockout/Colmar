@@ -34,7 +34,7 @@ html {
 }
 
 .navArea {
-  background-color: yellow;  // debug
+  //background-color: yellow;  // debug
 }
 
 .navArea .desktop {
@@ -51,8 +51,8 @@ html {
   display: none;
 }
 
-@media only screen and (max-width: 460px) {
-  .logoAndName .desktop {
+@media only screen and (max-width: 480px) {
+  .logoAndName {
     display: none;
   }
   .navArea .desktop {
@@ -60,6 +60,10 @@ html {
   }
   .navArea .mobile {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30rem;  // how to make this dynamic
+    flex-shrink: 10;
   }
 }
 
