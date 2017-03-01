@@ -1,3 +1,65 @@
 html {
-  font-size: 18px;
+  font-size: 16px;
 }
+
+.headSection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 4rem;  // per spec
+  background-color: rgba(255, 245, 238, 1);  // seashell
+}
+
+.logoAndName {
+  display: inline-flex;
+  align-items: center;
+}
+
+.logoAndName img {
+  margin-left: 1.5rem;  // per spec
+}
+
+.name {
+  font-size: 1rem;
+}
+
+.darkColor {
+  font-weight: bold;
+}
+
+.lightColor {
+  color: rgba(148, 148, 148, 1);  // lighter gray
+}
+
+.navArea {
+  background-color: yellow;  // debug
+}
+
+.navArea .desktop {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navArea .desktop li {
+  padding-right: 1rem;
+  color: rgba(108, 108, 108, 1);  // gray - not working
+}
+
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 460px) {
+  .logoAndName .desktop {
+    display: none;
+  }
+  .navArea .desktop {
+    display: none;
+  }
+  .navArea .mobile {
+    display: flex;
+  }
+}
+
