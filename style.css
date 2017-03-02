@@ -101,6 +101,39 @@ html {
   padding: 0.5rem auto;  // per spec
 }
 
+.infoSection {
+  display: flex;
+  flex-direction: row;
+  height: 20rem;
+}
+
+.mainInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainInfo img {
+  width: 60%;  // per spec
+  max-width: 100%;  // scale for resize
+  height: auto;  // scale for resize
+}
+
+.additionalInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.info {
+  display: inline-flex;
+  width: 26.4375rem;
+}
+
+.info img {
+  width: 35%;
+  max-width: 100%;
+  height: auto;
+}
+
 .mobile {
   display: none;
 }
@@ -124,6 +157,25 @@ html {
   }
   .emptyArea {
     display: block;
+  }
+  .mainInfo.desktop {
+    display: none;
+  }
+  .info img .desktop {
+    display: none;
+  }
+  .info img .mobile {
+    display: block;
+  }
+  .info h4.desktop {
+    display: none;
+  }
+  .info h4.mobile {
+    display: block;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
   }
 }
 
