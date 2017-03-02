@@ -182,20 +182,24 @@ html {
     height: auto;
     margin-top: 1rem;
   }
-  /*
-  .info h4.desktop {
-    display: none;
-  }
-  .info h6.desktop {
-    display: none;
-  }
-*/
   .info h4.mobile {
     display: block;
-    padding: 1rem 1rem 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1rem 1rem 0 2rem;
+  }
+  .info h5.mobile {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 200;
+    padding: 0.5rem 1rem 0 2rem;
   }
   .info h6.mobile {
     display: block;
+    font-size: 0.6rem;
+    font-weight: 200;
+    color: rgba(0, 0, 255, 0.7);
+    padding: 0.5rem 1rem 1rem 2rem;
   }
   .info {
     display: flex;
