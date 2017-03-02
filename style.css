@@ -129,6 +129,13 @@ html {
   width: 26.4375rem;
 }
 
+.infoText {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 .info img desktop {  // question: when do I use img.desktop
   width: 35%;
   max-width: 100%;
@@ -166,18 +173,23 @@ html {
   .info img.desktop {
     display: none;
   }
+  .infoText.desktop {
+    display: none;
+  }
   .info img.mobile {
     display: block;
     width: 100%;
     height: auto;
     margin-top: 1rem;
   }
+  /*
   .info h4.desktop {
     display: none;
   }
   .info h6.desktop {
     display: none;
   }
+*/
   .info h4.mobile {
     display: block;
     padding: 1rem 1rem 1rem 2rem;
