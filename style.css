@@ -233,6 +233,7 @@ html {
 .courseDesc h5 {
   font-size: 0.5rem;
   font-weight: 300;
+  padding: 0.5rem 0;  // per spec
 }
 
 .courseDesc h6 {
