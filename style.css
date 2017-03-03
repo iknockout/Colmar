@@ -183,6 +183,63 @@ html {
   height: auto;
 }
 
+.startLearningContainer {
+  display: flex;
+  flex-direction: column;  // h2 & courseSection
+  align-items: center;
+  background-color: lightgray;
+  padding: 2rem 0;  // per spec
+}
+
+.startLearningContainer h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.courseSection { 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.course {
+  display: flex;
+  flex-direction: column;  // img & courseDesc
+  margin: 0 1rem;  // per spec
+}
+
+.course img {
+  max-width: 100%;
+  height: auto;
+  max-height: 10.25rem;  // per spec
+}
+
+.courseDesc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem 0 1.5rem 1rem;  // per spec
+  background-color: white;
+}
+
+.courseDesc h3 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.courseDesc h5 {
+  font-size: 0.5rem;
+  font-weight: 300;
+}
+
+.courseDesc h6 {
+  font-size: 0.5rem;
+  font-weight: 300;
+}
+
 .mobile {
   display: none;
 }
