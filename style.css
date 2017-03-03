@@ -241,6 +241,12 @@ html {
   font-weight: 300;
 }
 
+.courseSection.mobile h3 {
+  padding: 1rem;  // per spec
+  margin-bottom: 0.5rem;  // per spec
+  background-color: lightgray;  // not working
+}
+
 .mobile {
   display: none;
 }
@@ -306,6 +312,17 @@ html {
   .info {
     display: flex;
     flex-direction: column;
+  }
+  .courseSection.desktop {
+    display: none;
+  }
+  .courseSection.mobile {
+    display: flex; 
+    flex-direction: column;
+  }
+  .startLearningContainer {
+    background-color: white;
+    padding: 2rem 0 1rem 0;  // per spec
   }
 }
 
