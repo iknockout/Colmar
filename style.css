@@ -104,7 +104,8 @@ html {
 .infoSection {
   display: flex;
   flex-direction: row;
-  height: 60rem;
+  padding-top: 2rem;  // per spec
+  padding-left: 1.5rem;  // per spec
   border: medium solid red;  // debug
 }
 
@@ -140,7 +141,7 @@ html {
   width: 35%;
   max-width: 100%;
   height: auto;
-  padding-top: 1rem;  // per spec
+  //padding-top: 1rem;  // per spec
 }
 
 .mobile {
@@ -166,6 +167,10 @@ html {
   }
   .emptyArea {
     display: block;
+  }
+  .infoSection {
+    padding-top: 1rem;  // per spec
+    padding-bottom: 2rem;  // per spec
   }
   .mainInfo.desktop {
     display: none;
