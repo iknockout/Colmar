@@ -112,12 +112,32 @@ html {
 .mainInfo {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 1.5rem;  // per spec - why setting contain padding-left didn't work?
 }
 
 .mainInfo img {
   width: 60%;  // per spec
   max-width: 100%;  // scale for resize
   height: auto;  // scale for resize
+}
+
+.mainInfo h2 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding-top: 2rem;
+}
+
+.mainInfo p {
+  font-weight: 200;
+  font-size: 0.8rem;
+  padding-top: 1.5rem;
+}
+
+.mainInfo h6 {
+  font-size: 0.6rem;
+  font-weight: 200;
+  padding-top: 2rem;
 }
 
 .additionalInfo {
@@ -130,6 +150,7 @@ html {
   flex-direction: row;
   justify-content: space-between;
   width: 26.4375rem;
+  padding: 0 0 1rem 1rem;
 }
 
 .infoText {
@@ -209,20 +230,20 @@ html {
     display: block;
     font-size: 1rem;
     font-weight: 600;
-    padding: 1rem 1rem 0 2rem;
+    padding: 1rem 1rem 0 1rem;
   }
   .info h5.mobile {
     display: block;
     font-size: 0.8rem;
     font-weight: 200;
-    padding: 0.5rem 1rem 0 2rem;
+    padding: 0.5rem 1rem 0 1rem;
   }
   .info h6.mobile {
     display: block;
     font-size: 0.6rem;
     font-weight: 200;
     color: rgba(0, 0, 255, 0.7);
-    padding: 0.5rem 1rem 1rem 2rem;
+    padding: 0.5rem 1rem 1rem 1rem;
   }
   .info {
     display: flex;
