@@ -126,22 +126,40 @@ html {
 }
 
 .info {
-  display: inline-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   width: 26.4375rem;
 }
 
 .infoText {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: center; 
+}
+
+.infoText h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+
+.infoText h5 {
+  font-size: 0.8rem;
+  font-weight: 200;
+  padding-bottom: 2rem;
+}
+
+.infoText h6 {
+  font-size: 0.6rem;
+  font-weight: 200;
+  color: rgba(0, 0, 255, 0.7);
 }
 
 .info img desktop {  // question: when do I use img.desktop
   width: 35%;
   max-width: 100%;
   height: auto;
-  //padding-top: 1rem;  // per spec
 }
 
 .mobile {
