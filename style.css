@@ -35,8 +35,8 @@ html {
 }
 
 .navArea {
-  /*
-  background-color: yellow;  /* debug */
+  /* debug
+  background-color: yellow; 
   */
 }
 
@@ -56,8 +56,8 @@ html {
   height: 11.25rem;  /* per spec */
   width: 100%;
   background-color: rgba(148, 148, 148, 1); 
-/*
-  //border: medium solid red;  // debug
+/* debug
+  border: medium solid red; 
 */
 }
 
@@ -65,13 +65,7 @@ html {
   display: flex;
   flex-direction: row;
   align-items: center;
-/*
-  max-height: 20rem;  /* bug: img still scales beyond this container */
-*/
-/*
   background-color: rgba(208, 208, 208, 1);
-*/
-  background-color: lightgray;
   padding: 2rem 2.5rem 2rem 1.5rem;  /* per spec */
 }
 
@@ -97,10 +91,8 @@ html {
 
 .text2 {
   font-size: 0.9rem;
-/*
-  //padding-top: 2rem;  // per spec for mobile?
-  //padding-bottom: 1.5rem;  // per spec for mobile?
-*/
+  padding-top: 2rem;   /* per spec for mobile? */
+  padding-bottom: 1.5rem;  /* per spec for mobile */
 }
 
 .button {
